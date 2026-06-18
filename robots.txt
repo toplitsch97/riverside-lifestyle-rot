@@ -1,0 +1,28 @@
+# Riverside Lifestyle — robots.txt
+# Alle regulären Suchmaschinen erlaubt
+User-agent: *
+Allow: /
+
+# KI-/Antwortmaschinen-Crawler ausdrücklich erlaubt (Zitierfähigkeit)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://riverside-lifestyle.com/sitemap.xml

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riverside Lifestyle — Tattoo, Beauty &amp; Gastro · St. Gallen &amp; St. Margrethen</title>
+<meta name="description" content="Riverside Lifestyle vereint drei Marken unter einem Dach: Riverside Ink (Tattoo & Piercing), Riverside Beauty (Aesthetics) und Riverside Gastro. Standorte St. Gallen & St. Margrethen.">
+<link rel="canonical" href="https://riverside-lifestyle.com/">
+<meta name="theme-color" content="#07080c">
+<link rel="icon" href="assets/brand/favicon.png" type="image/png">
+
+<!-- Open Graph / Social -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Riverside Lifestyle">
+<meta property="og:title" content="Riverside Lifestyle — Tattoo, Beauty & Gastro">
+<meta property="og:description" content="Drei Welten. Ein Lifestyle. Tattoo, Beauty und Gastronomie unter einem Dach in St. Gallen & St. Margrethen.">
+<meta property="og:url" content="https://riverside-lifestyle.com/">
+<meta property="og:image" content="https://riverside-lifestyle.com/assets/poster/poster.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<nav class="nav">
+  <div class="nav-in">
+    <a class="brandmark" href="#top"><img class="brandmark__logo" src="assets/brand/logo.png" alt="Riverside Lifestyle"></a>
+    <span class="nav-meta">Lifestyle House · St. Gallen / St. Margrethen</span>
+    <div class="nav-links">
+      <a href="https://www.riverside-ink.ch">Ink</a>
+      <!-- TODO: echte Beauty-URL -->
+      <a href="#">Beauty</a>
+      <!-- TODO: echte Gastro-URL -->
+      <a href="#">Gastro</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== HERO: SPLIT THIRDS (PORTAL) ===================== -->
+<header id="top" class="hero">
+  <div class="panels">
+    <!-- Panel 01 — INK -> riverside-ink.ch -->
+    <a class="panel" href="https://www.riverside-ink.ch" data-brand="ink">
+      <div class="panel-media">
+        <video muted loop playsinline poster="assets/poster/ink.jpg">
+          <source src="assets/video/ink.mp4?v=6" type="video/mp4">
+        </video>
+      </div>
+      <div class="panel-body">        <h2>Ink</h2>
+        <p class="panel-sub">Tattoo · Piercing · Bodymod</p>
+        <span class="panel-more">Zur Website →</span>
+      </div>
+      <span class="panel-progress"><span></span></span>
+    </a>
+
+    <!-- Panel 02 — BEAUTY -->
+    <!-- TODO: href auf echte Beauty-Homepage setzen + assets/video/beauty.mp4?v=4 ersetzen -->
+    <a class="panel" href="#" data-brand="beauty">
+      <div class="panel-media">
+        <video muted loop playsinline poster="assets/poster/beauty.jpg">
+          <source src="assets/video/beauty.mp4?v=4" type="video/mp4">
+        </video>
+      </div>
+      <div class="panel-body">        <h2>Beauty</h2>
+        <p class="panel-sub">Hyaluron · Aesthetics · Skin</p>
+        <span class="panel-more">Zur Website →</span>
+      </div>
+      <span class="panel-progress"><span></span></span>
+    </a>
+
+    <!-- Panel 03 — GASTRO -->
+    <!-- TODO: href auf echte Gastro-Homepage setzen + assets/video/gastro.mp4?v=4 ersetzen -->
+    <a class="panel" href="#" data-brand="gastro">
+      <div class="panel-media">
+        <video muted loop playsinline poster="assets/poster/gastro.jpg">
+          <source src="assets/video/gastro.mp4?v=4" type="video/mp4">
+        </video>
+      </div>
+      <div class="panel-body">        <h2>Gastro</h2>
+        <p class="panel-sub">Kitchen · Bar · Lounge</p>
+        <span class="panel-more">Zur Website →</span>
+      </div>
+      <span class="panel-progress"><span></span></span>
+    </a>
+  </div>
+
+  <div class="hero-overlay">
+    <span class="kicker">St. Gallen · St. Margrethen</span>
+    <h1>Drei Welten. Ein <em>Lifestyle</em>.</h1>
+  </div>
+</header>
+
+<!-- ===================== LEGAL BAR ===================== -->
+<footer class="legal-bar">
+  <div class="legal-in">
+    <span>© 2026 Riverside Lifestyle</span>
+    <nav class="legal-links">
+      <a href="impressum.html">Impressum</a>
+      <a href="agb.html">AGB</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </nav>
+  </div>
+</footer>
+
+<!-- ===================== STRUCTURED DATA (JSON-LD) ===================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://riverside-lifestyle.com/#org",
+      "name": "Riverside Lifestyle",
+      "url": "https://riverside-lifestyle.com/",
+      "description": "Dachmarke über drei Betrieben in der Ostschweiz: Tattoo, Beauty und Gastronomie.",
+      "areaServed": ["St. Gallen", "St. Margrethen"],
+      "hasPart": [
+        { "@id": "https://riverside-lifestyle.com/#ink" },
+        { "@id": "https://riverside-lifestyle.com/#beauty" },
+        { "@id": "https://riverside-lifestyle.com/#gastro" }
+      ]
+    },
+    {
+      "@type": "TattooParlor",
+      "@id": "https://riverside-lifestyle.com/#ink",
+      "name": "Riverside Ink",
+      "url": "https://www.riverside-ink.ch",
+      "description": "Tattoo-, Piercing- und Bodymodification-Studio in St. Margrethen und St. Gallen.",
+      "parentOrganization": { "@id": "https://riverside-lifestyle.com/#org" },
+      "address": { "@type": "PostalAddress", "addressLocality": "St. Margrethen", "addressRegion": "SG", "addressCountry": "CH" }
+    },
+    {
+      "@type": "BeautySalon",
+      "@id": "https://riverside-lifestyle.com/#beauty",
+      "name": "Riverside Beauty",
+      "description": "Beauty- und Aesthetics-Studio: Hyaluron, Skincare und mehr in St. Gallen.",
+      "parentOrganization": { "@id": "https://riverside-lifestyle.com/#org" },
+      "address": { "@type": "PostalAddress", "addressLocality": "St. Gallen", "addressRegion": "SG", "addressCountry": "CH" }
+    },
+    {
+      "@type": "Restaurant",
+      "@id": "https://riverside-lifestyle.com/#gastro",
+      "name": "Riverside Gastro",
+      "description": "Kitchen, Bar und Lounge — Gastronomie unter dem Dach von Riverside Lifestyle.",
+      "parentOrganization": { "@id": "https://riverside-lifestyle.com/#org" },
+      "servesCuisine": "International",
+      "address": { "@type": "PostalAddress", "addressLocality": "St. Gallen", "addressRegion": "SG", "addressCountry": "CH" }
+    }
+  ]
+}
+</script>
+
+<script src="js/main.js"></script>
+</body>
+</html>
